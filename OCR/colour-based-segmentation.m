@@ -13,7 +13,7 @@ nColors = 2;
 % Perform K-means clustering
 pixel_labels = imsegkmeans(ab,nColors);
 
-% show processed image
+% Show processed image
 mask2 = pixel_labels==2; % cluster 2 with red errors
 cluster2 = image .* uint8(mask2);
 figure()
